@@ -15,8 +15,9 @@ class MahasiswaResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'nim'=>$this->nim,
-            'nama'=>$this->nama,
+            'Nim'=>$this->Nim,
+            'Nama'=>$this->Nama,
+            'Jurusan'=>strtoupper($this->Jurusan)
         ];
     }
 }
